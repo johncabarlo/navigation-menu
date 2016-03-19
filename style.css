@@ -1,0 +1,141 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color:#333;
+    padding:0;
+    margin:0;
+}
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+.masterNav{
+	position:relative;
+	background-color:#333;
+}
+
+/*======HORIZONTAL NAVBAR MENU=======*/
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+
+}
+.navbarWrapper{
+  overflow:hidden;
+}
+.navbarWrapper > li{
+	float:left;
+}
+li a{
+	padding: 15px 40px;
+	display: block;
+	color:#fff;
+	text-decoration:none;
+}
+li a:hover{
+	background-color:#111;
+
+}
+li.active{
+	background-color: #4CAF50;
+}
+li.active a:hover{
+	background-color: #4CAF50;
+}
+/*=====END OF HORIZONTAL NAV MENU=====*/
+
+/*======VERTICAL NAVBAR MENU======*/
+ul li ul{
+	position: absolute;
+	display: none;
+}
+.hasSubmenu li{
+  border-bottom:1px solid #ddd;
+}
+.hasSubmenu li:last-child{
+  border-bottom:none;
+}
+.hasSubmenu:hover ul{
+	display:block;
+
+}
+.hasSubmenu ul{
+	background: #fff;
+    border: 1px solid #E4E4E4;
+    box-shadow: 0px 6px 22px -9px #9A9A9A;
+    border-radius: 5px;
+}
+.hasSubmenu ul a{
+		color:#333;
+}
+.hasSubmenu ul a:hover{
+	color:#333;
+	background: #f1f1f1;
+  position: relative;
+
+}
+.hasSubmenu ul a:hover {
+  color:#333;
+  background: #f1f1f1;
+
+}
+.hasSubmenu ul li{
+    position: relative;
+}
+/*======END OF VERTICAL NAVBAR MENU======*/
+
+
+/*====NAVWALKER=====*/
+.hasSubmenu ul li .navWalker{
+	display: none;
+}
+.hasSubmenu ul li:hover .navWalker{
+	display: block;
+  left:100%;
+  top:1px;
+}
+
+.hasSubmenu > ul:before{
+   position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+.hasSubmenu > ul:after{
+    position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+.arrow-down{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: relative;
+    top: 12px;
+    left: 8px;
+}
+.arrow-rigth{
+    width: 0;
+    height: 0;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #B1B1B1;
+    font-size: 0px;
+    position: relative;
+    top: -5px;
+    left: 6px;
+
+}
